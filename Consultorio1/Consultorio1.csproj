@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD55895C-09B1-47FC-8831-73001978AEC1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Consultorio1</RootNamespace>
+    <AssemblyName>Consultorio1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAnotacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnotacoes.Designer.cs">
+      <DependentUpon>frmAnotacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadConsulta.Designer.cs">
+      <DependentUpon>frmCadConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadDentista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadDentista.Designer.cs">
+      <DependentUpon>frmCadDentista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadPaciente.Designer.cs">
+      <DependentUpon>frmCadPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConDentista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConDentista.Designer.cs">
+      <DependentUpon>frmConDentista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConPaciente.Designer.cs">
+      <DependentUpon>frmConPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultas.Designer.cs">
+      <DependentUpon>frmConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConUsuario.Designer.cs">
+      <DependentUpon>frmConUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarConsulta.Designer.cs">
+      <DependentUpon>frmEditarConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarDentista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarDentista.Designer.cs">
+      <DependentUpon>frmEditarDentista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarPaciente.Designer.cs">
+      <DependentUpon>frmEditarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarUsuario.Designer.cs">
+      <DependentUpon>frmEditarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSuporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSuporte.Designer.cs">
+      <DependentUpon>frmSuporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuario.Designer.cs">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAnotacoes.resx">
+      <DependentUpon>frmAnotacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadConsulta.resx">
+      <DependentUpon>frmCadConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadDentista.resx">
+      <DependentUpon>frmCadDentista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadPaciente.resx">
+      <DependentUpon>frmCadPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConDentista.resx">
+      <DependentUpon>frmConDentista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConPaciente.resx">
+      <DependentUpon>frmConPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultas.resx">
+      <DependentUpon>frmConsultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConUsuario.resx">
+      <DependentUpon>frmConUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarConsulta.resx">
+      <DependentUpon>frmEditarConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarDentista.resx">
+      <DependentUpon>frmEditarDentista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarPaciente.resx">
+      <DependentUpon>frmEditarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarUsuario.resx">
+      <DependentUpon>frmEditarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSuporte.resx">
+      <DependentUpon>frmSuporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuario.resx">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{98842CC8-E01B-4B25-AC08-B086FEFFC25A}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WcfService\WcfService.csproj">
+      <Project>{00FD283C-A515-4BE9-96EC-521ABE69B6FC}</Project>
+      <Name>WcfService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagens\add.ico" />
+    <Content Include="Imagens\agenda.ico" />
+    <Content Include="Imagens\ajuda.ico" />
+    <None Include="Imagens\Botao.png" />
+    <Content Include="Imagens\btLimpar.png" />
+    <Content Include="Imagens\btSearch.png" />
+    <Content Include="Imagens\deletar.ico" />
+    <Content Include="Imagens\editarBT.png" />
+    <None Include="Imagens\login.png" />
+    <None Include="Imagens\logoff.png" />
+    <None Include="Imagens\medecina.jpg" />
+    <None Include="Imagens\password.png" />
+    <Content Include="Imagens\sair.ico" />
+    <Content Include="Imagens\salvar botao.png" />
+    <Content Include="Imagens\salvar.ico" />
+    <Content Include="Imagens\salvarBT.png" />
+    <None Include="Imagens\Usuario.png" />
+    <None Include="Imagens\senha.png" />
+    <Content Include="Resources\address171.png" />
+    <Content Include="Resources\banner.jpg" />
+    <Content Include="Resources\banner2.png" />
+    <Content Include="Resources\btLimpar.png" />
+    <Content Include="Resources\btSearch.png" />
+    <Content Include="Resources\Circle_Blue.png" />
+    <Content Include="Resources\Circle_Green.png" />
+    <Content Include="Resources\Circle_Grey.png" />
+    <Content Include="Resources\Circle_Orange.png" />
+    <Content Include="Resources\Circle_Red.png" />
+    <Content Include="Resources\Circle_Yellow.png" />
+    <Content Include="Resources\deletar.ico" />
+    <Content Include="Resources\dentista.ico" />
+    <Content Include="Resources\dentista.jpg" />
+    <Content Include="Resources\dentistapq.jpg" />
+    <Content Include="Resources\direction4L.png" />
+    <Content Include="Resources\editar.ico" />
+    <Content Include="Resources\editarBT.png" />
+    <Content Include="Resources\sair.ico" />
+    <Content Include="Resources\salvar botao.png" />
+    <Content Include="Resources\salvar.ico" />
+    <None Include="Resources\direction4R.png" />
+    <None Include="Resources\salvarBT.png" />
+    <None Include="Resources\deletarBT.png" />
+    <None Include="Resources\ajuda.ico" />
+    <None Include="Resources\agenda.ico" />
+    <None Include="Resources\add.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
