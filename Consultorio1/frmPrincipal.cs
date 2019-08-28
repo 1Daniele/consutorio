@@ -19,12 +19,12 @@ namespace Consultorio1
         PacienteService serviceP = new PacienteService();
         public frmPrincipal()
         {
-            InitializeComponent(); IniciarFormulario();
+            InitializeComponent();
+            IniciarFormulario();
         }
 
         private void IniciarFormulario()
         {
-
             atualizarCb();
         }
 
@@ -165,20 +165,9 @@ namespace Consultorio1
         {
             Application.Exit();
         }
-        private void cbDentista_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cbDentista_SelectionChangeCommitted(object sender, EventArgs e)
-        {
-            atualizarAgenda(Convert.ToInt32(cbDentista.SelectedValue));
-
-        }
-        private void cbDentista_Click(object sender, EventArgs e)
-        {
-            atualizarCb();
-        }
+   
+       
+       
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
@@ -246,6 +235,20 @@ namespace Consultorio1
         {
             frmUsuario frm = new frmUsuario();
             frm.ShowDialog();
+        }
+
+        private void cbDentista_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void cbDentista_Click(object sender, EventArgs e)
+        {
+            atualizarCb();
+        }
+
+        private void cbDentista_SelectionChangeCommitted_1(object sender, EventArgs e)
+        {
+            atualizarAgenda(Convert.ToInt32(cbDentista.SelectedValue));
         }
     }
 }

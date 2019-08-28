@@ -45,6 +45,7 @@
             this.menuDentista = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPaciente = new System.Windows.Forms.ToolStripMenuItem();
             this.menuConsulta = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agendasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuAgDentistas = new System.Windows.Forms.ToolStripMenuItem();
             this.menuAgPacientes = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,7 +54,6 @@
             this.menuSuporte = new System.Windows.Forms.ToolStripMenuItem();
             this.MSair = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dg)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -144,6 +144,8 @@
             this.cbDentista.Name = "cbDentista";
             this.cbDentista.Size = new System.Drawing.Size(210, 21);
             this.cbDentista.TabIndex = 10;
+            this.cbDentista.SelectedIndexChanged += new System.EventHandler(this.cbDentista_SelectedIndexChanged);
+            this.cbDentista.SelectionChangeCommitted += new System.EventHandler(this.cbDentista_SelectionChangeCommitted_1);
             this.cbDentista.Click += new System.EventHandler(this.cbDentista_Click);
             // 
             // label1
@@ -185,23 +187,30 @@
             // menuDentista
             // 
             this.menuDentista.Name = "menuDentista";
-            this.menuDentista.Size = new System.Drawing.Size(180, 22);
+            this.menuDentista.Size = new System.Drawing.Size(121, 22);
             this.menuDentista.Text = "Dentista";
             this.menuDentista.Click += new System.EventHandler(this.menuDentista_Click);
             // 
             // menuPaciente
             // 
             this.menuPaciente.Name = "menuPaciente";
-            this.menuPaciente.Size = new System.Drawing.Size(180, 22);
+            this.menuPaciente.Size = new System.Drawing.Size(121, 22);
             this.menuPaciente.Text = "Paciente";
             this.menuPaciente.Click += new System.EventHandler(this.menuPaciente_Click);
             // 
             // menuConsulta
             // 
             this.menuConsulta.Name = "menuConsulta";
-            this.menuConsulta.Size = new System.Drawing.Size(180, 22);
+            this.menuConsulta.Size = new System.Drawing.Size(121, 22);
             this.menuConsulta.Text = "Consulta";
             this.menuConsulta.Click += new System.EventHandler(this.menuConsulta_Click);
+            // 
+            // usuarioToolStripMenuItem
+            // 
+            this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.usuarioToolStripMenuItem.Text = "Usuario";
+            this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
             // 
             // agendasToolStripMenuItem
             // 
@@ -266,13 +275,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(514, 288);
             this.panel1.TabIndex = 12;
-            // 
-            // usuarioToolStripMenuItem
-            // 
-            this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.usuarioToolStripMenuItem.Text = "Usuario";
-            this.usuarioToolStripMenuItem.Click += new System.EventHandler(this.usuarioToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 

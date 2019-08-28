@@ -59,6 +59,10 @@
     <Compile Include="Migrations\201906190522504_banco.Designer.cs">
       <DependentUpon>201906190522504_banco.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908280329005_UsuarioMigration.cs" />
+    <Compile Include="Migrations\201908280329005_UsuarioMigration.Designer.cs">
+      <DependentUpon>201908280329005_UsuarioMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorios\ConsultaRep.cs" />
@@ -80,6 +84,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201906190522504_banco.resx">
       <DependentUpon>201906190522504_banco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908280329005_UsuarioMigration.resx">
+      <DependentUpon>201908280329005_UsuarioMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

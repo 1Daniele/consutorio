@@ -47,6 +47,7 @@ namespace Consultorio1
                 ts.Text = ValidarCad();
                 if (ts.Text == "Sucesso")
                 {
+                    service.Cadastrar(objGerado());
                     MessageBox.Show("Cadastro Efetuado com Sucesso");
                     this.Close();
                 }
@@ -70,7 +71,8 @@ namespace Consultorio1
         private void btnConsulta_Click(object sender, EventArgs e)
         {
 
-            
+            frmConUsuario frm = new frmConUsuario();
+            frm.ShowDialog();
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)

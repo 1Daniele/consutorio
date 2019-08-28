@@ -9,7 +9,7 @@ namespace Controllers.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(Controllers.Context.SistemaContext context)

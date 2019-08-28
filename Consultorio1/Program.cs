@@ -17,7 +17,7 @@ namespace Consultorio1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmUsuario());
+            Application.Run(new frmPrincipal());
         }
     }
 }

@@ -11,7 +11,7 @@ namespace Interfaces
     [ServiceContract]
     public interface IUsuario
     {
-         [OperationContract]
+        [OperationContract]
         void Cadastrar(Usuario obj);
 
         [OperationContract]
@@ -27,4 +27,3 @@ namespace Interfaces
         void Editar(Usuario objNovo);
     }
 }
-

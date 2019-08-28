@@ -127,7 +127,7 @@ namespace Consultorio1
             int linhaAtual = data.Rows.Add();
             data.Rows[linhaAtual].Cells[0].Value = dado.Id;
             data.Rows[linhaAtual].Cells[1].Value = dado.User;
-            data.Rows[linhaAtual].Cells[2].Value = dado.Senha;   
+          
     }
     }
 }
