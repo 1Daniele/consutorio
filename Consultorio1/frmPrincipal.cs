@@ -163,7 +163,10 @@ namespace Consultorio1
 
         private void MSair_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Deseja encerrar a aplicação ?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
    
        

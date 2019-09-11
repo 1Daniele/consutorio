@@ -66,5 +66,22 @@ namespace Controllers.Repositorios
                 ctx.SaveChanges();
             }
         }
+
+        public  bool Login(string usuario, string senha )
+        {
+            using (var ctx = new SistemaContext())
+            {
+                var Usuarios = ctx.Usuarios.Where(u=> u.User == usuario && u.Senha == senha).FirstOrDefault();
+
+                if  (Usuarios != null)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
     }
 }

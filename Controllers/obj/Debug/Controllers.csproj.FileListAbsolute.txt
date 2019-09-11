@@ -43,10 +43,9 @@ E:\Filipi_Wesley\Consultorio\Consultorio1\Consultorio\Controllers\bin\Debug\Enti
 E:\Filipi_Wesley\Consultorio\Consultorio1\Consultorio\Controllers\bin\Debug\EntityFramework.xml
 E:\Filipi_Wesley\Consultorio\Consultorio1\Consultorio\Controllers\bin\Debug\EntityFramework.SqlServer.xml
 E:\Filipi_Wesley\Consultorio\Consultorio1\Consultorio\Controllers\obj\Debug\Controllers.csprojAssemblyReference.cache
-E:\Filipi_Wesley\Consultorio\Consultorio1\Consultorio\Controllers\obj\Debug\Controllers.Migrations.banco.resources
-E:\Filipi_Wesley\Consultorio\Consultorio1\Consultorio\Controllers\obj\Debug\Controllers.csproj.GenerateResource.cache
 E:\Filipi_Wesley\Consultorio\Consultorio1\Consultorio\Controllers\obj\Debug\Controllers.csproj.CoreCompileInputs.cache
 E:\Filipi_Wesley\Consultorio\Consultorio1\Consultorio\Controllers\obj\Debug\Controllers.csproj.CopyComplete
 E:\Filipi_Wesley\Consultorio\Consultorio1\Consultorio\Controllers\obj\Debug\Controllers.dll
 E:\Filipi_Wesley\Consultorio\Consultorio1\Consultorio\Controllers\obj\Debug\Controllers.pdb
-E:\Filipi_Wesley\Consultorio\Consultorio1\Consultorio\Controllers\obj\Debug\Controllers.Migrations.UsuarioMigration.resources
+E:\Filipi_Wesley\Consultorio\Consultorio1\Consultorio\Controllers\obj\Debug\Controllers.Migrations.BancoMigration.resources
+E:\Filipi_Wesley\Consultorio\Consultorio1\Consultorio\Controllers\obj\Debug\Controllers.csproj.GenerateResource.cache

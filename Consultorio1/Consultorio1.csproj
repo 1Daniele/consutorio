@@ -224,9 +224,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Controllers\Controllers.csproj">
+      <Project>{9b95636c-13b5-4a1f-b145-d74e40630fa2}</Project>
+      <Name>Controllers</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{98842CC8-E01B-4B25-AC08-B086FEFFC25A}</Project>
       <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{90d8a9ae-4eae-4f43-a6fc-ca0eafd75c7d}</Project>
+      <Name>Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\WcfService\WcfService.csproj">
       <Project>{00FD283C-A515-4BE9-96EC-521ABE69B6FC}</Project>

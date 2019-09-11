@@ -42,5 +42,10 @@ namespace WcfService
             rep.Editar(objNovo);
         }
 
+        public bool login(string usuario, string senha)
+        {
+           
+            return rep.Login(usuario, senha);
+        }
     }
 }

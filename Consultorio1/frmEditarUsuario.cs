@@ -47,6 +47,7 @@ namespace Consultorio1
                     this.obj.User = txtUsuario.Text;
                     this.obj.Senha = txtSenha.Text;
                     service.Editar(this.obj);
+                    MessageBox.Show("Este Registro acabou de ser excluido por outro usuário");
                     this.Close();
                 }
             }
@@ -54,7 +55,20 @@ namespace Consultorio1
 
         private string ValidarCad()
         {
-            throw new NotImplementedException();
+            ts.ForeColor = Color.Red;
+            if (txtUsuario.Text == string.Empty)
+            {
+                return "Preencha o campo Usuário!";
+            }
+           else if (txtSenha.Text == string.Empty)
+            {
+                return "Preencha o campo Senha";
+            }
+            else
+            {
+                ts.ForeColor = Color.Black;
+                return "Sucesso";
+            }
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)

@@ -25,5 +25,9 @@ namespace Interfaces
 
         [OperationContract]
         void Editar(Usuario objNovo);
+
+         [OperationContract]
+        bool login(string usuario, string senha);
     }
-}
+
+ }
